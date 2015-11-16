@@ -11,7 +11,7 @@
     },
 
     "push": {
-        "name": "juliusblank/devbox",
+        "name": "juliusblank/devbox-alpha",
         "token": "{{user `atlas_token`}}"
     },
 
@@ -23,6 +23,7 @@
                 "scripts/virtualbox.sh",
                 "scripts/vmware.sh",
                 "scripts/vagrant.sh",
+                "scripts/sysdig.sh",
                 "scripts/docker.sh",
                 "scripts/cleanup.sh",
                 "scripts/zerodisk.sh"
@@ -46,7 +47,7 @@
     {
         "type": "atlas",
         "only": ["vmware-iso"],
-        "artifact": "juliusblank/devbox",
+        "artifact": "juliusblank/devbox-alpha",
         "artifact_type": "vagrant.box",
         "metadata": {
             "provider": "vmware_desktop",
@@ -56,7 +57,7 @@
     {
         "type": "atlas",
         "only": ["virtualbox-iso"],
-        "artifact": "juliusblank/devbox",
+        "artifact": "juliusblank/devbox-alpha",
         "artifact_type": "vagrant.box",
         "metadata": {
             "provider": "virtualbox",
